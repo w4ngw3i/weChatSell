@@ -1,0 +1,32 @@
+spring:
+   datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://192.168.0.19:3306/sell?characterEncoding=utf-8&useSSL=false
+     username: root
+     password: 123456
+   jpa:
+    show-sql: true
+   jackson:
+     default-property-inclusion: non_null #配置全局字段为null不送
+   redis:
+     host: 192.168.0.19
+     port: 6379
+#server:
+#  context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d %msg%n"
+##  path: /Users/wangwei/File/Log/sell/
+#  file: /Users/wangwei/File/Log/sell/tomcat/sell.log
+#  level: debug
+
+wechat:
+   mpAppId: wxd898fcb01713c658
+   mpAppsecret: 376ce78657e511ac7af89ddf8c551307
+   mchId: 1483469312
+   mchKey: C5245D70627C1F8E9964D494B0735025
+   keyPath: /Users/wangwei/opt/h5.p12
+   notifyUrl: http://wangwei.nat300.top/pay/notify
+#    mpAppId: wxd898fcb01713c658
+
+
